@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "id": "52b9",
+      "firstName": "Sukanto ",
+      "lastName": "Sarker",
+      "email": "sukanto5098@gmail.com",
+      "phone": "01766418905",
+      "address": "tangai,dhaka"
+    },
+    {
+      "id": "8834",
+      "firstName": "Rabbi",
+      "lastName": "Hossain",
+      "email": "rabbi123@gmail.com",
+      "phone": "1226677880",
+      "address": "dhaka"
+    },
+    {
+      "id": "f2cb",
+      "firstName": "Robin",
+      "lastName": "Miah",
+      "email": "robin@gmail.com",
+      "phone": "1234567",
+      "address": "tangail"
+    }
+  ]
+}
