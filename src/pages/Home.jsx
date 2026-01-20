@@ -11,11 +11,10 @@ export default function Home() {
   const [selected, setSelected] = useState(null);
   const [mode, setMode] = useState("");
 
-  // 🔍 Search + Filter logic
   const filteredContacts = useMemo(() => {
     let data = [...contacts];
 
-    // SEARCH
+
     if (query) {
       data = data.filter(c =>
         `${c.firstName} ${c.lastName} ${c.email} ${c.phone}`
@@ -24,7 +23,7 @@ export default function Home() {
       );
     }
 
-    // FILTER
+
     if (filter === "fname") {
       data.sort((a, b) =>
         a.firstName.localeCompare(b.firstName)
@@ -47,10 +46,8 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-4">
 
-      {/* 🔍 SEARCH + FILTER BAR */}
+  
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-
-        {/* Search */}
         <input
           type="text"
           placeholder="Search contact..."
@@ -85,7 +82,6 @@ export default function Home() {
         />
       )}
 
-      {/* MODAL */}
       {selected && (
         <ContactModal
           contact={selected}
